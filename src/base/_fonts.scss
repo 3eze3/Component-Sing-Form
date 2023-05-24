@@ -1,3 +1,4 @@
+@use "../abtract/varibles" as colors_bg;
 @font-face {
   font-family: Poppins-Bold;
   src: url("../assets/fonts/Poppins-Bold.ttf");
@@ -25,19 +26,34 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: colors_bg.$red;
+  background-image: url("../../dist/assets/images/bg-intro-desktop.png");
 }
 
 h1 {
-  // font-size: ;
+  font-size: colors_bg.$lg;
+  font-family: Poppins-Bold;
+  line-height: 1.55;
+  color: colors_bg.$white;
 }
+
 p {
-  // font-size: ;
+  font-size: colors_bg.$rm;
+  font-family: Poppins-Regular;
+  line-height: 1.6;
+  color: colors_bg.$white-gray;
 }
+
 a {
-  // font-size: ;
+  // color: colors_bg.$red;
+  color: red;
 }
+
 em {
+  color: colors_bg.$white;
+  font-family: Poppins-Semibold;
 }
+
 a,
 em {
   font-style: normal;
