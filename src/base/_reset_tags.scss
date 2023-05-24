@@ -31,6 +31,10 @@ a {
   font-size: inherit;
 }
 
+p a {
+  display: inline-block;
+}
+
 li {
   list-style-type: none;
 }
