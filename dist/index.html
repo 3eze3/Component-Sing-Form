@@ -32,33 +32,37 @@
         </div>
         <!--  -->
         <form action="#" class="login__form">
-          <label class="login__label">
-            <input
-              type="text"
-              class="login__field"
-              placeholder=" First Name " />
+          <label class="login__label" aria-label="Enter your name ">
+            <input type="text" class="login__field" placeholder="First Name" />
           </label>
 
-          <label class="login__label">
-            <input type="text" class="login__field" placeholder=" Last Name " />
+          <label class="login__label" aria-label="Enter your lastname ">
+            <input type="text" class="login__field" placeholder="Last Name" />
           </label>
 
-          <label class="login__label">
+          <label class="login__label" aria-label="Enter your email">
             <input
               type="text"
               class="login__field"
               placeholder="Email Address" />
           </label>
 
-          <label class="login__label">
-            <input type="text" class="login__field" placeholder=" Password " />
+          <label class="login__label" aria-label="Enter your password">
+            <input
+              type="password"
+              class="login__field"
+              placeholder="Password" />
           </label>
           <button type="submit" class="login__submit">
             Claim your free trial
           </button>
           <p class="login__conditions">
             By clicking the button, you are agreeing to our
-            <a href="#" class="login__conditions login__conditions--link">
+            <a
+              href="#"
+              class="login__conditions login__conditions--link"
+              aria-hidden="true"
+              aria-label="Link for the terms and services">
               Terms and Services</a
             >
           </p>
