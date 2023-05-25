@@ -1,0 +1,32 @@
+@use "../abtract/mixin" as layout;
+@use "../abtract/varibles" as colors_bg;
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-inline: 12rem;
+  &__information {
+    flex: 50%;
+  }
+  &__login {
+    flex: 60%;
+    height: 35rem;
+    padding-inline: 2rem;
+    // outline: solid red 1px;
+  }
+}
+.login__wrapper {
+  height: 4rem;
+  // outline: solid red 1px;
+  background-color: colors_bg.$blue;
+  border-radius: 0.35rem;
+  margin-bottom: 1.6rem;
+}
+.login__form {
+  background-color: colors_bg.$white;
+  border-radius: 0.4rem;
+  height: calc(100% - 5.6rem);
+}
