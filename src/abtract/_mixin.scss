@@ -5,3 +5,6 @@
   justify-content: $justify;
   gap: $gap;
 }
+@mixin bx_bottom($color) {
+  box-shadow: 0rem 0.5rem 0rem $color;
+}
