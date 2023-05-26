@@ -1,0 +1,27 @@
+@use "../abtract/mixin" as layout;
+@use "../abtract/varibles" as colors_bg;
+.login {
+  flex: 60%;
+  height: 35rem;
+  padding-inline: 2rem;
+  &__wrapper {
+    height: 3.78rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+    border-radius: 0.65rem;
+    background-color: colors_bg.$blue;
+    @include layout.bx_bottom(colors_bg.$soft-dark);
+  }
+
+  &__promo {
+    line-height: 3.78rem;
+  }
+
+  &__form {
+    height: calc(100% - 5.6rem);
+    background-color: colors_bg.$white;
+    border-radius: 0.65rem;
+    padding: 2.5rem;
+    @include layout.bx_bottom(colors_bg.$soft-dark);
+  }
+}
