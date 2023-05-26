@@ -24,6 +24,7 @@ body {
   font-size: 100%;
   hyphens: auto;
   font-smooth: always;
+  font-family: Poppins-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: colors_bg.$red;
@@ -58,4 +59,10 @@ a,
 em {
   font-style: normal;
   text-decoration: none;
+}
+
+button {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
 }
