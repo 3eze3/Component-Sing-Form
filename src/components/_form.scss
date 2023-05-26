@@ -1,0 +1,36 @@
+@use "../abtract/varibles" as colors_bg;
+@use "../abtract/mixin" as layout;
+.login {
+  &__field {
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 0.25rem;
+    outline: solid #00000044 1px;
+    margin-bottom: 1.5rem;
+    padding-inline: 1.5rem;
+    color: colors_bg.$dark-blue;
+    &:focus {
+      outline: solid #000 1px;
+      font-weight: 600;
+    }
+  }
+  &__submit {
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 0.25rem;
+    background-color: colors_bg.$green;
+    color: colors_bg.$white;
+    font-size: colors_bg.$md;
+    box-shadow: 0.06rem -0.25rem 0rem #00000030 inset,
+      -0.07rem 0.01rem 0rem #0000003e inset;
+  }
+  //
+  &__conditions {
+    font-size: colors_bg.$sm;
+    text-align: center;
+    margin-top: 0.4rem;
+    &--link {
+      font-weight: 600;
+    }
+  }
+}
