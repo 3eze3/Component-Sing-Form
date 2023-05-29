@@ -8,3 +8,9 @@
 @mixin bx_bottom($color) {
   box-shadow: 0rem 0.5rem 0rem $color;
 }
+
+@mixin media-break($media: max-width, $break) {
+  @media screen and ($media: $break) {
+    @content;
+  }
+}
