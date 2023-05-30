@@ -1,8 +1,8 @@
 // reset base
 @use "base/fonts";
 @use "base/reset_tags";
+// components
+@use "components/form";
 // layout
 @use "layout/main";
 @use "layout/login";
-// components
-@use "components/form";
