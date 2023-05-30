@@ -1,4 +1,5 @@
 @use "../abtract/varibles" as colors_bg;
+@use "../abtract/mixin" as layout;
 @font-face {
   font-family: Poppins-Bold;
   src: url("../assets/fonts/Poppins-Bold.ttf");
@@ -37,6 +38,11 @@ h1 {
   line-height: 1.2;
   color: colors_bg.$white;
   margin-bottom: 2rem;
+  hyphens: manual;
+  @include layout.media-break() {
+    font-size: 1.85em;
+    text-align: center;
+  }
 }
 
 p {
