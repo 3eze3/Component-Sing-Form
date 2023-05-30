@@ -22,28 +22,37 @@ body {
   font-size: 100%;
   hyphens: auto;
   font-smooth: always;
+  font-family: Poppins-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: hsl(0deg, 100%, 74%);
-  background-image: url("../../dist/assets/images/bg-intro-desktop.png");
+  background-image: url("../assets/images/bg-intro-desktop.png");
 }
 
 h1 {
-  font-size: 2.65em;
+  font-size: 2.75em;
   font-family: Poppins-Bold;
-  line-height: 1.55;
+  line-height: 1.2;
   color: hsl(0deg, 0%, 100%);
+  margin-bottom: 2rem;
+  hyphens: manual;
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.85em;
+    text-align: center;
+  }
 }
 
 p {
   font-size: 1em;
   font-family: Poppins-Regular;
   line-height: 1.6;
-  color: hsl(0deg, 0%, 94%);
+  color: hsl(0deg, 0%, 77%);
 }
 
-a {
-  color: red;
+p a {
+  color: hsl(0deg, 100%, 74%);
 }
 
 em {
@@ -55,6 +64,21 @@ a,
 em {
   font-style: normal;
   text-decoration: none;
+}
+
+button {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.login__error--message {
+  display: block;
+  font-family: Poppins-Regular;
+  font-size: 0.75em;
+  color: hsl(0deg, 100%, 74%);
+  font-style: italic;
+  text-align: right;
 }
 
 *,
@@ -122,6 +146,146 @@ svg {
   width: 100%;
   display: block;
   fill: currentColor;
+}
+
+.login__label {
+  position: relative;
+}
+.login__field {
+  width: 100%;
+  height: 3.3rem;
+  border-radius: 0.25rem;
+  outline: solid rgba(0, 0, 0, 0.2666666667) 1px;
+  margin-bottom: 1.5rem;
+  padding-inline: 1.5rem;
+  color: hsl(249deg, 10%, 26%);
+}
+.login__field:focus {
+  outline: solid #000 1px;
+  font-weight: 600;
+}
+.login__submit {
+  width: 100%;
+  height: 3.3rem;
+  border-radius: 0.25rem;
+  background-color: hsl(154deg, 59%, 51%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.9em;
+  box-shadow: 0.06rem -0.25rem 0rem rgba(0, 0, 0, 0.1882352941) inset, -0.07rem 0.01rem 0rem rgba(0, 0, 0, 0.2431372549) inset;
+}
+.login__conditions {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+.login__conditions--link {
+  font-weight: 600;
+}
+.login__error {
+  transition: 0.15s ease-in;
+}
+.login__error--icon {
+  width: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 3.5rem;
+  opacity: 0;
+}
+.login__error--message {
+  width: 0;
+  height: 0;
+  transform: translateY(-1rem);
+  overflow: hidden;
+}
+
+.active {
+  transition: 0.15s ease-in;
+}
+.active--icon {
+  opacity: 1;
+}
+.active--message {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-inline: 12rem;
+}
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+.main__information {
+  flex: 50%;
+}
+@media screen and (max-width: 480px) {
+  .main__description {
+    text-align: center;
+    hyphens: manual;
+    padding-inline: 1.25em;
+    color: #fff;
+  }
+}
+
+.login {
+  flex: 60%;
+  min-height: 35rem;
+  padding-inline: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .login {
+    padding-inline: 0;
+  }
+}
+.login__wrapper {
+  height: 3.78rem;
+  margin-bottom: 1.6rem;
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 0.65rem;
+  text-align: center;
+  box-shadow: 0rem 0.5rem 0rem hsla(0deg, 0%, 0%, 0.147);
+}
+@media screen and (max-width: 480px) {
+  .login__wrapper {
+    height: 6rem;
+    padding-inline: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    text-align: center;
+  }
+}
+.login__promo {
+  line-height: 3.78rem;
+}
+@media screen and (max-width: 480px) {
+  .login__promo {
+    line-height: 1.8;
+  }
+}
+.login__form {
+  height: calc(100% - 5.6rem);
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.65rem;
+  padding: 2.5rem;
+  box-shadow: 0rem 0.5rem 0rem hsla(0deg, 0%, 0%, 0.147);
 }
 
 /*# sourceMappingURL=style.css.map */
