@@ -2,7 +2,7 @@
 @use "../abtract/varibles" as colors_bg;
 .login {
   flex: 60%;
-  height: 35rem;
+  min-height: 35rem;
   padding-inline: 2rem;
   @include layout.media-break() {
     padding-inline: 0;
