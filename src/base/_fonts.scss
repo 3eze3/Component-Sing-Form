@@ -72,3 +72,12 @@ button {
   letter-spacing: 0.1em;
   cursor: pointer;
 }
+
+.login__error--message {
+  display: block;
+  font-family: Poppins-Regular;
+  font-size: colors_bg.$error;
+  color: colors_bg.$red;
+  font-style: italic;
+  text-align: right;
+}
