@@ -27,6 +27,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: hsl(0deg, 100%, 74%);
   background-image: url("../assets/images/bg-intro-desktop.png");
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  body {
+    overflow: visible;
+  }
 }
 
 h1 {
@@ -182,7 +188,7 @@ svg {
   font-weight: 600;
 }
 .login__error {
-  transition: 0.15s ease-in;
+  transition: 0.5s ease-in;
 }
 .login__error--icon {
   width: 1.5rem;
@@ -196,18 +202,18 @@ svg {
   height: 0;
   transform: translateY(-1rem);
   overflow: hidden;
+  transition: 0.3s ease-in;
 }
 
-.active {
-  transition: 0.15s ease-in;
-}
 .active--icon {
   opacity: 1;
+  transition: 0.5s ease-in;
 }
 .active--message {
   width: 100%;
   height: 100%;
   overflow: visible;
+  transition: 0.3s ease-in;
 }
 
 .main {
