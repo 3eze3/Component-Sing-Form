@@ -23,21 +23,28 @@
         </p>
       </section>
       <section class="main__login login">
-        <!--  -->
         <div class="login__wrapper">
           <p class="login__promo">
             <em class="login__promo login__promo--days">Try it free 7 days </em>
             then $20/mo. thereafter
           </p>
         </div>
-        <!--  -->
-        <form action="#" class="login__form">
+        <form action="#" class="login__form" novalidate>
           <label class="login__label" aria-label="Enter your name" for="name">
             <input
               type="text"
               id="name"
               class="login__field"
-              placeholder="First Name" />
+              placeholder="First Name"
+              required />
+            <img
+              class="login__error login__error--icon"
+              src="assets/images/icon-error.svg"
+              alt
+              aria-hidden="true" />
+            <small class="login__error login__error--message"
+              >First Name cannot be empty</small
+            >
           </label>
 
           <label
@@ -48,15 +55,33 @@
               type="text"
               id="lastname"
               class="login__field"
-              placeholder="Last Name" />
+              placeholder="Last Name"
+              required />
+            <img
+              class="login__error login__error--icon"
+              src="assets/images/icon-error.svg"
+              alt
+              aria-hidden="true" />
+            <small class="login__error login__error--message"
+              >Last Name cannot be empty</small
+            >
           </label>
 
           <label class="login__label" aria-label="Enter your email" for="email">
             <input
-              type="text"
+              type="email"
               id="email"
               class="login__field"
-              placeholder="Email Address" />
+              placeholder="Email Address"
+              required />
+            <img
+              class="login__error login__error--icon"
+              src="assets/images/icon-error.svg"
+              alt
+              aria-hidden="true" />
+            <small class="login__error login__error--message">
+              Looks like this is not email
+            </small>
           </label>
 
           <label
@@ -67,7 +92,16 @@
               type="password"
               id="password"
               class="login__field"
-              placeholder="Password" />
+              placeholder="Password"
+              required />
+            <img
+              class="login__error login__error--icon"
+              src="assets/images/icon-error.svg"
+              alt
+              aria-hidden="true" />
+            <small class="login__error login__error--message">
+              Password cannot be empty
+            </small>
           </label>
           <button type="submit" class="login__submit">
             CLAIM YOUR FREE TRIAL
