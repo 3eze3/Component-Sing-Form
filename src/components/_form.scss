@@ -36,7 +36,7 @@
     }
   }
   &__error {
-    transition: 0.15s ease-in;
+    transition: 0.5s ease-in;
     &--icon {
       width: 1.5rem;
       position: absolute;
@@ -49,17 +49,19 @@
       height: 0;
       transform: translateY(-1rem);
       overflow: hidden;
+      transition: 0.3s ease-in;
     }
   }
 }
 .active {
-  transition: 0.15s ease-in;
   &--icon {
     opacity: 1;
+    transition: 0.5s ease-in;
   }
   &--message {
     width: 100%;
     height: 100%;
     overflow: visible;
+    transition: 0.3s ease-in;
   }
 }
