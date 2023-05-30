@@ -30,6 +30,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: colors_bg.$red;
   background-image: url("../assets/images/bg-intro-desktop.png");
+  overflow: hidden;
+  @include layout.media-break() {
+    overflow: visible;
+  }
 }
 
 h1 {
