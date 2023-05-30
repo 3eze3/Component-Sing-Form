@@ -4,17 +4,29 @@
   flex: 60%;
   height: 35rem;
   padding-inline: 2rem;
+  @include layout.media-break() {
+    padding-inline: 0;
+  }
   &__wrapper {
     height: 3.78rem;
     margin-bottom: 1.6rem;
-    text-align: center;
-    border-radius: 0.65rem;
     background-color: colors_bg.$blue;
+    border-radius: 0.65rem;
+    text-align: center;
     @include layout.bx_bottom(colors_bg.$soft-dark);
+    @include layout.media-break() {
+      height: 6rem;
+      padding-inline: 4.5rem;
+      @include layout.flex($gap: 0rem);
+      text-align: center;
+    }
   }
 
   &__promo {
     line-height: 3.78rem;
+    @include layout.media-break() {
+      line-height: 1.8;
+    }
   }
 
   &__form {
