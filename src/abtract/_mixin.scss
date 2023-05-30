@@ -9,7 +9,7 @@
   box-shadow: 0rem 0.5rem 0rem $color;
 }
 
-@mixin media-break($media: max-width, $break) {
+@mixin media-break($media: max-width, $break: 480px) {
   @media screen and ($media: $break) {
     @content;
   }
