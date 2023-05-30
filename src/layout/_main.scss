@@ -5,7 +5,19 @@
   min-height: 100vh;
   @include layout.flex($justify: space-between, $gap: 5rem);
   padding-inline: 12rem;
+  @include layout.media-break() {
+    padding: 5rem 2rem;
+    @include layout.flex($direction: column, $gap: 3rem);
+  }
   &__information {
     flex: 50%;
+  }
+  &__description {
+    @include layout.media-break() {
+      text-align: center;
+      hyphens: manual;
+      padding-inline: 1.25em;
+      color: #fff;
+    }
   }
 }
